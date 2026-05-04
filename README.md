@@ -165,7 +165,7 @@ Estructura de alto nivel del repositorio:
 
 ---
 
-## 10. Evolución y mejoras futuras
+## 11. Evolución y mejoras futuras
 
 Para convertir esta base en un sistema municipal plenamente operativo, se recomiendan las siguientes líneas de mejora:
 
@@ -180,7 +180,7 @@ Para convertir esta base en un sistema municipal plenamente operativo, se recomi
 
 ---
 
-## 11. Valor estratégico del proyecto
+## 12. Valor estratégico del proyecto
 
 Más allá de la digitalización operativa, esta propuesta representa:
 
@@ -191,7 +191,7 @@ Más allá de la digitalización operativa, esta propuesta representa:
 
 ---
 
-## 12. Conclusión
+## 13. Conclusión
 
 El proyecto ofrece una base sólida y presentable para la modernización del Polideportivo Municipal de Villarejo del Río. La aplicación frontend demuestra una propuesta funcional coherente, alineada con procesos reales y preparada para evolucionar hacia un sistema integral con backend y datos persistentes.
 

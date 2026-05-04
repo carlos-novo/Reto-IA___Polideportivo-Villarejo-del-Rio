@@ -146,7 +146,7 @@ export default function IncidentsPage() {
     {
       key: "status",
       header: "Estado",
-      render: () => <StatusBadge value="maintenance" label="Deteriorado" />,
+      render: () => <StatusBadge value="damaged" label="Deteriorado" />,
     },
   ];
 
