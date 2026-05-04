@@ -1,13 +1,4 @@
-export type EquipmentCondition = "good" | "worn" | "damaged";
-
-export type EquipmentItem = {
-  id: string;
-  name: string;
-  category: "rackets" | "balls" | "nets" | "cones" | "vests" | "other";
-  quantityTotal: number;
-  quantityAvailable: number;
-  condition: EquipmentCondition;
-};
+import type { EquipmentItem } from "@/shared/types/equipment";
 
 export const equipment: EquipmentItem[] = [
   {

@@ -137,7 +137,24 @@ Las capturas permiten validar la coherencia visual, la navegación y la experien
 
 ---
 
-## 9. Estructura del proyecto
+## 9. Cómo ejecutar el proyecto
+
+Esta entrega corresponde a una **versión frontend** con **datos simulados** (mock data) para validar navegación, experiencia de uso y coherencia funcional. No existe backend real en esta fase.
+
+### Requisitos
+- Node.js **>= 18**
+- npm
+
+### Instalación y ejecución (modo desarrollo)
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+---
+
+## 10. Estructura del proyecto
 
 Estructura de alto nivel del repositorio:
 

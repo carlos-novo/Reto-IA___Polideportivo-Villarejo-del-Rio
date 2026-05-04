@@ -1,4 +1,5 @@
-import { users as seed, type User, type UserStatus } from "@/mock-data/users";
+import { users as seed } from "@/mock-data/users";
+import type { User, UserStatus } from "@/shared/types/users";
 
 function sleep(ms: number) {
   return new Promise((r) => setTimeout(r, ms));

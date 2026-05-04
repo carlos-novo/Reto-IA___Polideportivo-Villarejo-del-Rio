@@ -1,4 +1,5 @@
-import { reservations as seed, type Reservation, type ReservationStatus } from "@/mock-data/reservations";
+import { reservations as seed } from "@/mock-data/reservations";
+import type { Reservation, ReservationStatus } from "@/shared/types/reservations";
 
 function sleep(ms: number) {
   return new Promise((r) => setTimeout(r, ms));

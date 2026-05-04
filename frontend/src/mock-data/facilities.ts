@@ -1,13 +1,4 @@
-export type FacilityStatus = "available" | "occupied" | "maintenance";
-
-export type FacilityType = "court" | "fitness" | "pool";
-
-export type Facility = {
-  id: string;
-  name: string;
-  type: FacilityType;
-  status: FacilityStatus;
-};
+import type { Facility } from "@/shared/types/facilities";
 
 export const facilities: Facility[] = [
   { id: "fac-001", name: "Pista Polideportiva 1", type: "court", status: "available" },

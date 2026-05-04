@@ -1,15 +1,4 @@
-export type UserRole = "admin" | "receptionist" | "coach";
-export type UserStatus = "active" | "inactive";
-
-export type User = {
-  id: string;
-  fullName: string;
-  role: UserRole;
-  status: UserStatus;
-  email: string;
-  phone: string;
-  createdAt: string; // ISO
-};
+import type { User } from "@/shared/types/users";
 
 export const users: User[] = [
   {

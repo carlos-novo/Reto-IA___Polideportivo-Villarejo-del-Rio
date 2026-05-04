@@ -25,7 +25,7 @@ export function Table<T>({
               {columns.map((c) => (
                 <th
                   key={c.key}
-                  className={["px-4 py-3.5 align-middle", c.className].join(" ")}
+                  className={["px-4 py-2.5 align-middle", c.className].join(" ")}
                 >
                   {c.header}
                 </th>
@@ -48,7 +48,7 @@ export function Table<T>({
                   {columns.map((c) => (
                     <td
                       key={c.key}
-                      className={["px-4 py-3.5 align-middle", c.className].join(" ")}
+                      className={["px-4 py-2.5 align-middle", c.className].join(" ")}
                     >
                       {c.render(row)}
                     </td>

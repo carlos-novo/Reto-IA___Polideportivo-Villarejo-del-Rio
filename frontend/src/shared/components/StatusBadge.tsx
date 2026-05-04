@@ -9,7 +9,8 @@ const VARIANTS: Record<string, { className: string; label?: string }> = {
     label: "Inactivo",
   },
   pending: {
-    className: "bg-blue-50 text-blue-700 ring-blue-600/20",
+    // Advertencia / en curso: ámbar (más coherente que azul para backoffice)
+    className: "bg-amber-50 text-amber-700 ring-amber-600/20",
     label: "Pendiente",
   },
   cancelled: {
@@ -24,9 +25,10 @@ const VARIANTS: Record<string, { className: string; label?: string }> = {
   },
   occupied: {
     className: "bg-amber-50 text-amber-700 ring-amber-600/20",
-    label: "Ocupado",
+    label: "Ocupada",
   },
   maintenance: {
+    // Crítico / requiere intervención: rojo/rosa
     className: "bg-rose-50 text-rose-700 ring-rose-600/20",
     label: "Mantenimiento",
   },
@@ -44,6 +46,16 @@ const VARIANTS: Record<string, { className: string; label?: string }> = {
     className: "bg-rose-50 text-rose-700 ring-rose-600/20",
     label: "Vencido",
   },
+
+  // Material (normalización de estados visibles)
+  damaged: {
+    className: "bg-rose-50 text-rose-700 ring-rose-600/20",
+    label: "Deteriorado",
+  },
+  deteriorated: {
+    className: "bg-rose-50 text-rose-700 ring-rose-600/20",
+    label: "Deteriorado",
+  },
 };
 
 export function StatusBadge({
@@ -53,7 +65,17 @@ export function StatusBadge({
   value: string;
   label?: string;
 }) {
-  const variant = VARIANTS[value] ?? {
+  // Normalización de valores para asegurar variantes explícitas en UI
+  const normalized =
+    value === "deteriorado" ||
+    value === "deteriorada" ||
+    value === "deteriorated"
+      ? "deteriorated"
+      : value === "damaged"
+        ? "damaged"
+        : value;
+
+  const variant = VARIANTS[normalized] ?? {
     className: "bg-slate-50 text-slate-700 ring-slate-600/20",
   };
 

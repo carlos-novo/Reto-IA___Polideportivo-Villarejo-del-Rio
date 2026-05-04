@@ -1,5 +1,7 @@
-import { equipment as equipmentSeed, type EquipmentItem } from "@/mock-data/equipment";
-import { equipmentLoans as loansSeed, type EquipmentLoan } from "@/mock-data/equipmentLoans";
+import { equipment as equipmentSeed } from "@/mock-data/equipment";
+import { equipmentLoans as loansSeed } from "@/mock-data/equipmentLoans";
+import type { EquipmentItem } from "@/shared/types/equipment";
+import type { EquipmentLoan } from "@/shared/types/equipmentLoans";
 
 function sleep(ms: number) {
   return new Promise((r) => setTimeout(r, ms));

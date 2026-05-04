@@ -2,7 +2,7 @@ import { getFacilities } from "@/modules/facilities/services/facilitiesService";
 import { PageHeader } from "@/shared/components/PageHeader";
 import { StatusBadge } from "@/shared/components/StatusBadge";
 import { Table, type Column } from "@/shared/components/Table";
-import type { Facility } from "@/mock-data/facilities";
+import type { Facility } from "@/shared/types/facilities";
 
 function typeLabel(type: Facility["type"]) {
   switch (type) {

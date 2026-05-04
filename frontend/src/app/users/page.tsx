@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import type { User } from "@/mock-data/users";
+import type { User } from "@/shared/types/users";
 import { getUsers, setUserStatus } from "@/modules/users/services/usersService";
 import { Card } from "@/shared/components/Card";
 import { PageHeader } from "@/shared/components/PageHeader";

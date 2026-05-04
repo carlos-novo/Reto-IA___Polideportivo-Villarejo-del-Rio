@@ -9,8 +9,8 @@ import {
   getReservations,
   type CreateReservationInput,
 } from "@/modules/reservations/services/reservationsService";
-import type { Facility } from "@/mock-data/facilities";
-import type { Reservation } from "@/mock-data/reservations";
+import type { Facility } from "@/shared/types/facilities";
+import type { Reservation } from "@/shared/types/reservations";
 import { Card } from "@/shared/components/Card";
 import { PageHeader } from "@/shared/components/PageHeader";
 import { StatusBadge } from "@/shared/components/StatusBadge";

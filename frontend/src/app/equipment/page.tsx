@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import type { EquipmentItem } from "@/mock-data/equipment";
-import type { EquipmentLoan } from "@/mock-data/equipmentLoans";
+import type { EquipmentItem } from "@/shared/types/equipment";
+import type { EquipmentLoan } from "@/shared/types/equipmentLoans";
 import {
   closeLoan,
   getEquipmentInventory,

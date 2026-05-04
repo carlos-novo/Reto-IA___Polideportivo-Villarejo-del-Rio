@@ -3,9 +3,9 @@
 import { useEffect, useMemo, useState } from "react";
 import { getEquipmentInventory, getEquipmentLoans } from "@/modules/equipment/services/equipmentService";
 import { getReservations } from "@/modules/reservations/services/reservationsService";
-import type { EquipmentItem } from "@/mock-data/equipment";
-import type { EquipmentLoan } from "@/mock-data/equipmentLoans";
-import type { Reservation } from "@/mock-data/reservations";
+import type { EquipmentItem } from "@/shared/types/equipment";
+import type { EquipmentLoan } from "@/shared/types/equipmentLoans";
+import type { Reservation } from "@/shared/types/reservations";
 import { Card } from "@/shared/components/Card";
 import { PageHeader } from "@/shared/components/PageHeader";
 import { StatusBadge } from "@/shared/components/StatusBadge";

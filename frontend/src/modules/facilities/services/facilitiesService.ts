@@ -1,4 +1,5 @@
-import { facilities, type Facility, type FacilityStatus } from "@/mock-data/facilities";
+import { facilities } from "@/mock-data/facilities";
+import type { Facility, FacilityStatus } from "@/shared/types/facilities";
 
 function sleep(ms: number) {
   return new Promise((r) => setTimeout(r, ms));
