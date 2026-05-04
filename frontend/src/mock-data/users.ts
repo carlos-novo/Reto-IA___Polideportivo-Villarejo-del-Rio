@@ -1,0 +1,141 @@
+export type UserRole = "admin" | "receptionist" | "coach";
+export type UserStatus = "active" | "inactive";
+
+export type User = {
+  id: string;
+  fullName: string;
+  role: UserRole;
+  status: UserStatus;
+  email: string;
+  phone: string;
+  createdAt: string; // ISO
+};
+
+export const users: User[] = [
+  {
+    id: "usr-001",
+    fullName: "María del Carmen Ortega",
+    role: "admin",
+    status: "active",
+    email: "maria.ortega@villarejo.local",
+    phone: "+34 600 123 401",
+    createdAt: "2025-10-12T09:10:00.000Z",
+  },
+  {
+    id: "usr-002",
+    fullName: "Marta Gómez",
+    role: "receptionist",
+    status: "active",
+    email: "marta.gomez@villarejo.local",
+    phone: "+34 600 123 402",
+    createdAt: "2025-11-03T08:45:00.000Z",
+  },
+  {
+    id: "usr-003",
+    fullName: "Javier Ruiz",
+    role: "receptionist",
+    status: "active",
+    email: "javier.ruiz@villarejo.local",
+    phone: "+34 600 123 403",
+    createdAt: "2026-01-15T07:30:00.000Z",
+  },
+  {
+    id: "usr-004",
+    fullName: "Sergio Díaz",
+    role: "coach",
+    status: "active",
+    email: "sergio.diaz@villarejo.local",
+    phone: "+34 600 123 404",
+    createdAt: "2025-09-22T10:05:00.000Z",
+  },
+  {
+    id: "usr-005",
+    fullName: "Laura Sánchez",
+    role: "coach",
+    status: "active",
+    email: "laura.sanchez@villarejo.local",
+    phone: "+34 600 123 405",
+    createdAt: "2026-02-02T12:20:00.000Z",
+  },
+  {
+    id: "usr-006",
+    fullName: "Ana Torres",
+    role: "coach",
+    status: "active",
+    email: "ana.torres@villarejo.local",
+    phone: "+34 600 123 406",
+    createdAt: "2025-12-05T09:55:00.000Z",
+  },
+  {
+    id: "usr-007",
+    fullName: "Diego Fernández",
+    role: "coach",
+    status: "inactive",
+    email: "diego.fernandez@villarejo.local",
+    phone: "+34 600 123 407",
+    createdAt: "2024-06-18T11:10:00.000Z",
+  },
+  {
+    id: "usr-008",
+    fullName: "Patricia Herrera",
+    role: "receptionist",
+    status: "inactive",
+    email: "patricia.herrera@villarejo.local",
+    phone: "+34 600 123 408",
+    createdAt: "2024-03-09T08:00:00.000Z",
+  },
+  {
+    id: "usr-009",
+    fullName: "Carlos Pérez",
+    role: "coach",
+    status: "active",
+    email: "carlos.perez@villarejo.local",
+    phone: "+34 600 123 409",
+    createdAt: "2026-03-10T16:40:00.000Z",
+  },
+  {
+    id: "usr-010",
+    fullName: "Lucía Gómez",
+    role: "receptionist",
+    status: "active",
+    email: "lucia.gomez@villarejo.local",
+    phone: "+34 600 123 410",
+    createdAt: "2026-03-22T09:15:00.000Z",
+  },
+  {
+    id: "usr-011",
+    fullName: "Pedro Martín",
+    role: "coach",
+    status: "active",
+    email: "pedro.martin@villarejo.local",
+    phone: "+34 600 123 411",
+    createdAt: "2025-08-11T07:50:00.000Z",
+  },
+  {
+    id: "usr-012",
+    fullName: "Sonia Castillo",
+    role: "receptionist",
+    status: "active",
+    email: "sonia.castillo@villarejo.local",
+    phone: "+34 600 123 412",
+    createdAt: "2026-04-01T10:30:00.000Z",
+  },
+  {
+    id: "usr-013",
+    fullName: "Juan Navarro",
+    role: "coach",
+    status: "inactive",
+    email: "juan.navarro@villarejo.local",
+    phone: "+34 600 123 413",
+    createdAt: "2024-12-20T09:05:00.000Z",
+  },
+  {
+    id: "usr-014",
+    fullName: "Claudia Romero",
+    role: "coach",
+    status: "active",
+    email: "claudia.romero@villarejo.local",
+    phone: "+34 600 123 414",
+    createdAt: "2026-04-18T08:18:00.000Z",
+  },
+];
